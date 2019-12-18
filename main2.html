@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="w3.css">
+	
+	<style type="text/css">
+	@media screen and (max-width:750px) {
+		.w3-sidenav{
+			width: 100%;
+		}
+	}
+	.slide{
+		display: none;
+	}
+	.main{
+		margin-left: ;
+	}
+	
+	h1,h2,h3,h4,p {
+		font-family: "Segoe UI",Arial,sans-serif;
+		font-weight: 400;
+	}
+
+	.momon{
+		background-color: black;
+		opacity: 0.2;
+		color: white;
+
+	}
+	.momon:hover{
+		background-color: black;
+		opacity: 1;
+	}
+	a.momon{
+		background-color: black;
+		opacity: 1;
+		color: white;
+	}
+	</style>
+</head>
+<body>
+	<!-- top navigation bar -->
+<div style="position: fixed; width: 100%;top: 0; z-index: 1">
+	<nav class="w3-navbar w3-topnav w3-container w3-card-2 " style="background-color: #160839; color: white">
+		<ul class="w3-navbar ">
+				<!-- top Menu bar -->
+			<li class=" w3-opennav w3-left w3-large "><a href="javascript:void(0)" onclick="w3_open()">&#9776;</a></li>
+			<li>		<!-- logo/home bar -->
+				<div class="w3-navbar-brand w3-black">
+				<a class="w3-btn w3-round-large" href="magerpink12.html"><img src="image/new.png" style="max-width:20px"><span class="" >MagerPink12</span></a>
+				</div>
+			</li>
+				<!-- top navigation bar -->
+			<div class=" w3-hide-small w3-right" id="idi">
+			<li><a href="#">Home<i class=""></i></a></li>
+			<li><a href="javascript:void(0)" onclick="document.getElementById('contact').style.display='block'">Contact Us</a></li>
+			<li><a href="#">About</a></li>
+					<!-- Dropdown menu -->
+			<li class="w3-dropdown-hover">
+				<a href="#">Register</a>
+				<div class="w3-dropdown-content w3-animate-zoom momon">
+					<div >
+						<a class=" momo " href="javascript:void(0)" onclick="document.getElementById('reg_mem').style.display = 'block'">Member</a>
+						<a class=" " href="#">tukunna</a>
+						<a href="#">wayasani</a>
+					</div>
+				</div>
+				</li>
+			<li><a href="javascript:void(0)" onclick=" document.getElementById('modal').style.display= 'block';" >Login</a></li>
+
+			<li><a href="#">Search</a></li>
+			</div>
+		</ul>	
+	</nav>
+</div>
+
+<div style="margin-top: 40px;z-index: -4">	
+	<!-- side navigation bar -->
+	<nav class="w3-sidenav w3-card-4 w3-black w3-animate-left" style="height: 100%;display:none;position: fixed; min-width: 300px ">
+		
+				<!-- navigation bar -->
+				<div class="">
+				<a class="w3-closenav w3-xlarge w3-right " href="javascript:void(0)" onclick="w3_close()">&times;</a>
+				<a href="#">Home<i class="fa fa-home"></i></a>
+				<a href="#">Contact Us</a>
+				<a href="#">About</a>
+						<!-- Dropdown menu -->
+					<a href="javascript:void(0)" onclick="myFunction('demo')" class="w3-accordion">Register</a>
+					<div class="w3-accordion-content w3-container w3-indigo " id="demo">
+							<a class=" " href="#">oho</a>
+							<a class=" " href="#">tukunna</a>
+							<a href="#">wayasani</a>
+					</div>
+				<a href="#">Sign In</a>
+				<a href="#">Search</a>
+				</div>	
+
+	</nav>
+
+	<div style="margin-left:" id="main">
+
+
+
+		<!-- LOGIN modal -->
+		<div class="w3-modal" id="modal">
+			<div class="w3-modal-content w3-animate-zoom w3-card-4" style="max-width: 40%">
+				<header class="w3-center ">
+					<h2 class="w3- " style="background-color: navy;color: white">Login<span class="w3-closebtn" onclick="document.getElementById('modal').style.display='none'">&times;</span></h2>
+					<img src="image/image.jpeg" style="max-width: 20%">
+				</header>
+				<div class="w3-container">
+					<form>
+						
+						<input class="w3-input" type="text" name="" required />
+						<label class="w3-validate w3-label"><b>Username</b></label><br>
+						
+						<input class="w3-input" type="text" name="" required />
+						<label class="w3-validate w3-label"><b>Password</b></label><br>
+						<button class="w3-btn w3-btn-block w3-green">Login</button><br>
+					</form>
+					<footer class="w3-border-top w3-padding">
+						<button onclick="document.getElementById('modal').style.display='none'" class="w3-btn w3-red">Cancel</button>
+						<p class="w3-right">Forgot <a href="#">Password?</a></p>
+					</footer>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+
+		<!-- Contact Us modal -->
+		<div class="w3-modal " id="contact">
+			<div class="w3-card-4 w3-modal-content w3-container w3-padding w3-animate-zoom">
+				<header class="w3-padding" style="background-color: navy; color: white;">
+					<h2>Contact Us</h2>
+				</header>
+				<div class="w3-container w3-row w3-padding-64 w3-center ">
+					
+					<div class="w3-third">
+						
+						<h3>Address</h3>
+						<p>Yobe State University Damaturu YSU</p>
+						<p>7kl Along Gujba road Damaturu.</p>
+						<p>+234 816 183 8283</p>
+					</div>
+					<div class="w3-twothird w3-card-4 w3-padding ">
+						<h2>Mail Us <span><img src="image/msg.png" style="max-width: 10%"></span></h2>
+
+						<label class="w3-left"><b>Address</b></label><br><input class="w3-input w3-border" type="email" name=""/>
+						<label class="w3-left"><b>Subject</b></label><br><input class="w3-input w3-border" type="text" name="">
+						<label class="w3-left"><b>Suggestion</b></label><br><textarea class="w3-input w3-border"></textarea>
+						<button class="w3-btn w3-btn-block w3-green">Send</button>
+
+					</div>
+				</div>
+				<button onclick="document.getElementById('contact').style.display='none' " class="w3-btn w3-red">Close</button>
+			</div>
+
+		</div>
+
+
+
+		<!-- Sign up modal -->
+		<div class="w3-modal w3-card-4" id="reg_mem" style="background-color:rgba(0,0,0,0.9)">
+			<span class="w3-closebtn w3-red w3-display-topright w3-padding" onclick="document.getElementById('reg_mem').style.display='none'" style="position: fixed;">&times;</span>
+			<div class="w3-modal-content w3-animate-top" style="max-width: 50%">
+				<header class="w3-padding" style="background-color: navy;color: white;">
+					<h3>Sign Up Form</h3>
+				</header>
+					
+
+				<div class="w3-container ">
+					<form>
+					<div class="w3-center">
+						<img class="w3-center" src="image/image.jpeg" style="width: 150px"><br>
+						<label class="w3-validate w3-label">Select Profile Picture </label><input class="" type="file" name="image"/>
+					</div>
+					
+					<input class="w3-input " type="text" name="fullname"  required />
+					<label class="w3-validate w3-label">Full Name</label>
+					
+					<input class="w3-input " type="text" name="phone" placeholder="e.g 080x xxxx xxx" required />
+					<label class="w3-validate w3-label">Phone Number</label>
+					
+					<input class="w3-input " type="email" name="email" placeholder="Example@MagerPink.com" required />
+					<label class="w3-validate w3-label">Email Address</label>
+	
+					<input class="w3-input " type="password" name="password" required/>
+					<label class="w3-validate w3-label">Choose Password</label>
+					
+					<input class="w3-input " type="password" name="" required/>
+					<label class="w3-validate w3-label">Confirm Password</label><br>
+
+					<input class="w3-btn w3-green" type="submit" name="submit"/>
+					<a class="w3-btn w3-red w3-right" href="javascript:void(0)" onclick="document.getElementById('reg_mem').style.display='none'">Cancel</a>
+				</form>
+				</div>
+				<footer class="w3-padding" style="background-color: navy; color: white;">
+					
+				</footer>
+			</div>
+		</div>
+
+
+
+		<!-- Fame slide -->
+		<div class="w3-section w3-content" style="width: 70%; z-index: -1; background-color: #5a6ee2">
+			
+			<img class="slide w3-animate-fading" style="width: 100%"src="image/imgg.png">
+			<img class="slide w3-animate-fading" style="width: 100%"src="image/imgg2.png">
+			<img class="slide w3-animate-fading" style="width: 100%"src="image/career (2).jpg">
+			<img class="slide w3-animate-fading" style="width: 100%"src="image/career (3).jpg">
+			<img class="slide w3-animate-fading" style="width: 100%"src="image/career.jpg">
+		</div>
+
+		<div class="w3-container w3-padding-64 w3-center">
+		<h2 class="">OUR TEAM</h2>
+		<p class="">Meet the team - our office rats:</p>
+		<div class="w3-row ">
+			<div class="w3-quarter">
+				<img class="w3-circle" src="image/maga7.png" style="width: 100px; height: 100px;">
+				<h3>The Boss</h3>
+				<p>Web Designer</p>
+			</div>
+			<div class="w3-quarter">
+				<img class="w3-circle" src="image/maga7.png" style="width: 100px; height: 100px;">
+				<h3>The Boss</h3>
+				<p>Web Designer</p>
+				
+			</div>
+			<div class="w3-quarter">
+				<img class="w3-circle" src="image/maga7.png" style="width: 100px; height: 100px;">
+				<h3>The Boss</h3>
+				<p>Web Designer</p>
+				
+			</div>
+			<div class="w3-quarter">
+				<img class="w3-circle" src="image/maga7.png" style="width: 100px; height: 100px;">
+				<h3>The Boss</h3>
+				<p>Web Designer</p>
+				
+			</div>
+		</div>
+
+		</div>
+		<!-- our Portfolio -->
+
+		<div class=" w3-row-padding w3-padding-64" style="width: 100%; background-color: #5a6ee2">
+
+			<div class="" style="">
+
+				<div class="w3-quarter " style="padding: 0.2%;">
+					<div class="w3-container" style="color: white">
+						<h3>Our Portfolio</h3>
+						<p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+	To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+	Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+	</p>
+					</div>
+						
+				</div>
+
+				<div class="w3-quarter  "style="padding: 0.2%" >
+					<div class="w3-container ">
+						<img src="image/career.jpg" style="width: 100%">
+						<div class="w3-container w3-white">
+							<h3>HUBBY</h3>
+							<p>your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-quarter "style="padding: 0.2%" >
+					<div class="w3-container ">
+						<img src="image/career.jpg" style="width: 100%">
+						<div class="w3-container w3-white ">
+							<h3>HUBBY</h3>
+							<p>your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-quarter "style="padding: 0.2%" >
+					<div class="w3-container ">
+						<img src="image/career.jpg" style="width: 100%">
+						<div class="w3-container w3-white ">
+							<h3>HUBBY</h3>
+							<p>your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+				<!-- Contact us -->
+		<div class="w3-row w3-padding-64">
+			<div class="w3-twothird w3-row-padding">
+				<h2 class="w3-center">Contact Us</h2>
+				<h3>Address</h3>
+				<p>Yobe State University Damaturu YSU</p>
+				<p>7kl Along Gujba road Damaturu.</p>
+				<p>+234 816 183 8283</p>
+			</div>
+		</div>
+
+		<footer class=" w3-center w3-padding-64" style="background-color: navy;color: white;" >
+			<h2>Follow Us</h2>
+			<div class="w3-row">
+				<a href="#" class="w3-btn-floating"></a>
+				<a href="#" class="w3-btn-floating"></a>
+				<a href="#" class="w3-btn-floating"></a>
+			</div>
+		</footer>
+		
+	</div>
+</div>
+	<script>
+function w3_open() {
+	document.getElementById("main").style.marginLeft = "25%";
+    document.getElementsByClassName("w3-sidenav")[0].style.width = "25%";
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-opennav")[0].style.display = 'none';
+}
+function w3_close() {
+	document.getElementById("main").style.marginLeft = "0%";
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-opennav")[0].style.display = "inline-block";
+}
+
+	var myindex = 0;
+	myslide();
+	function myslide() {
+		var x =document.getElementsByClassName('slide')
+		for (var i = 0; i< x.length; i++) {
+			x[i].style.display='none';
+		}
+		myindex++;
+		if (myindex > x.length) {myindex = 1}
+		x[myindex-1].style.display='block';
+		setTimeout(myslide, 9000);
+	}
+	function myFunction(id) {
+    document.getElementById(id).classList.toggle("w3-show");
+}
+
+</script>
+</body>
+	
+</html>
